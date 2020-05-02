@@ -1,0 +1,212 @@
+/*ResetCSS*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+@media only screen and (max-width: 414px) {
+  .main {
+    padding: 2em 1em;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main .book {
+    grid-column: 1/span 2;
+  }
+  .main .book img {
+    max-width: 300px;
+  }
+  .main .about {
+    grid-column: 1/span 2;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 415px) {
+  .main {
+    padding: 4em 1em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .main .book img {
+    max-width: 420px;
+  }
+  .main .about p {
+    max-width: 395px;
+  }
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.content .main {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 2em;
+}
+.content .main .book img {
+  object-fit: cover;
+  box-shadow: 0px 10px 40px rgba(0, 40, 56, 0.05);
+}
+.content .main .about h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.75em;
+  line-height: 1.2em;
+  color: #002838;
+  orphans: 2;
+}
+.content .main .about p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: rgba(0, 40, 56, 0.75);
+  margin: 1em 0 1.5em 0;
+  text-align: justify;
+}
+.content .main .about button {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.75em 1em;
+  background-color: #6F5ED3;
+  border: 1px solid rgba(76, 55, 200, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 0px #4C37C8;
+  border-radius: 3px;
+  transition-property: background-color transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+.content .main .about button img {
+  margin-left: 8px;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
+}
+.content .main .about button a {
+  color: #fff;
+  text-decoration: none;
+}
+.content .main .about button:hover {
+  background-color: #5D4ACE;
+  transform: scale(1.01);
+}
+.content .main .about button:hover img {
+  transform: translate(0, 5px);
+}
+.content .main .about button:focus {
+  outline: none;
+  background-color: #4C37C8;
+}
+.content .main .about footer {
+  margin-top: 3em;
+}
+.content .main .about footer a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75em;
+  color: rgba(0, 40, 56, 0.5);
+  text-decoration-style: dotted;
+  margin-right: 1.5em;
+}
+
+/*# sourceMappingURL=style.css.map */
