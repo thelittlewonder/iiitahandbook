@@ -1,8 +1,3 @@
-/*ResetCSS*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 html,
 body,
@@ -194,6 +189,9 @@ body {
 }
 .content .main .about button:focus {
   outline: none;
+}
+.content .main .about button:active {
+  transform: scale(0.98);
   background-color: #4C37C8;
 }
 .content .main .about footer {
@@ -204,7 +202,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 0.75em;
-  color: rgba(0, 40, 56, 0.65);
+  color: rgba(68, 134, 160, 0.65);
   text-decoration-style: dotted;
   margin-right: 1.5em;
 }
