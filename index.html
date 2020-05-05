@@ -48,15 +48,13 @@
         document.getElementById('share').style.display = 'none'
     } else {
         document.getElementById('share').addEventListener("click", function () {
-            if (navigator.share) {
-                navigator.share({
-                        title: 'The IIIT Allahabad Handbook',
-                        text: 'Checkout this freshers guide for IIIT Allahabad!',
-                        url: 'https://thelittlewonder.github.io/iiitahandbook/',
-                    })
-                    .then(() => console.log('Successful share'))
-                    .catch((error) => console.log('Error sharing', error));
-            }
+            navigator.share({
+                    title: 'The IIIT Allahabad Handbook',
+                    text: 'Checkout this freshers guide for IIIT Allahabad!',
+                    url: 'https://thelittlewonder.github.io/iiitahandbook/',
+                })
+                .then(() => console.log('Successful share'))
+                .catch((error) => console.log('Error sharing', error));
         })
     }
 </script>
