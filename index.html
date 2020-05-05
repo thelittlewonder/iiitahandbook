@@ -2,37 +2,59 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>The IIIT Allahabad Handbook</title>
-        <meta name="description" content="Freshers guide to IIIT Allahabad. A student written handbook about life at IIITA.">
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-        <meta name="theme-color" content="#002838">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="content">
-            <div class="main">
-                <div class="book">
-                    <img src="img/bookcover.png" alt="The IIIT Allahabad Handbook cover"/>
-                </div>
-                <div class="about">
-                    <h1>Your one stop guide to IIIT Allahabad</h1>
-                    <p>We bring to you the painful yet insanely awesome realities of college life at IIIT Allahabad, the oldest technical institute of our country. In an attempt to walk you through everything that this beautiful place has to offer, we've created this handbook of IIIT Allahabad.</p>
-                    <button><a href="#">Download PDF</a><img src="img/downloadicon.svg" alt="download-icon"/></button>
-                    <footer>
-                        <a href="https://m.me/intellectualbadass" target="_blank" rel="noreferrer">Contact</a>
-                        <a href="https://www.facebook.com/groups/comejointhefam" target="_blank" rel="noreferrer">Facebook Group</a>
-                    </footer>
-                </div>
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The IIIT Allahabad Handbook</title>
+    <meta name="description"
+        content="Freshers guide to IIIT Allahabad. A student written handbook about life at IIITA.">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <meta name="theme-color" content="#002838">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="main">
+            <div class="book">
+                <img src="img/bookcover.png" alt="The IIIT Allahabad Handbook cover" />
             </div>
+            <div class="about">
+                <h1>Your one stop guide to IIIT Allahabad</h1>
+                <p>We bring to you the painful yet insanely awesome realities of college life at IIIT Allahabad, the
+                    oldest technical institute of our country. In an attempt to walk you through everything that this
+                    beautiful place has to offer, we've created this handbook of IIIT Allahabad.</p>
+                <button><a href="#">Download PDF</a><img src="img/downloadicon.svg" alt="download-icon" /></button>
+                <footer>
+                    <a href="https://m.me/intellectualbadass" target="_blank" rel="noreferrer">Contact</a>
+                    <a href="https://www.facebook.com/groups/comejointhefam" target="_blank" rel="noreferrer">Facebook
+                        Group</a>
+                </footer>
+            </div>
+            <button id="share" aria-valuetext="Share"></button>
         </div>
-        <!--[if lt IE 7]>
+    </div>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-    </body>
+</body>
+<script>
+    document.getElementById('share').addEventListener("click", function () {
+        if (navigator.share) {
+            navigator.share({
+                    title: 'The IIIT Allahabad Handbook',
+                    text: 'The ultimate guide to IIITA for freshers',
+                    url: 'https://thelittlewonder.github.io/iiitahandbook/',
+                })
+                .then(() => console.log('Successful share'))
+                .catch((error) => console.log('Error sharing', error));
+        }
+    })
+</script>
+
 </html>
