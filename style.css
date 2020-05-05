@@ -174,7 +174,7 @@ body {
   margin-left: 8px;
   transition-property: transform;
   transition-timing-function: ease-in-out;
-  transition-duration: 0.25s;
+  transition-duration: 0.4s;
 }
 .content .main .about button a {
   color: #fff;
@@ -182,7 +182,6 @@ body {
 }
 .content .main .about button:hover {
   background-color: #5D4ACE;
-  transform: scale(1.01);
 }
 .content .main .about button:hover img {
   transform: translate(0, 5px);
@@ -191,7 +190,7 @@ body {
   outline: none;
 }
 .content .main .about button:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
   background-color: #4C37C8;
 }
 .content .main .about footer {
@@ -202,7 +201,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 0.75em;
-  color: rgba(68, 134, 160, 0.65);
+  color: #58727C;
   text-decoration-style: dotted;
   margin-right: 1.5em;
 }
