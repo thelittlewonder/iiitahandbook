@@ -168,7 +168,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 1.75em;
-  line-height: 1.5em;
+  line-height: 1.2em;
   color: #002838;
   orphans: 2;
 }
@@ -182,7 +182,7 @@ body {
   margin: 1em 0 1.5em 0;
   text-align: justify;
 }
-.content .main .about button {
+.content .main .about .dl-btn {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -197,29 +197,23 @@ body {
   transition-timing-function: ease-in-out;
   transition-duration: 0.25s;
   cursor: pointer;
+  color: #fff;
+  text-decoration: none;
 }
-.content .main .about button img {
+.content .main .about .dl-btn img {
   margin-left: 8px;
   transition-property: transform;
   transition-timing-function: ease-in-out;
   transition-duration: 0.4s;
 }
-.content .main .about button a {
-  color: #fff;
-  text-decoration: none;
-}
-.content .main .about button:hover {
+.content .main .about .dl-btn:hover {
   background-color: #5D4ACE;
 }
-.content .main .about button:hover img {
+.content .main .about .dl-btn:hover img {
   transform: translate(0, 5px);
 }
-.content .main .about button:focus {
+.content .main .about .dl-btn:focus {
   outline: none;
-}
-.content .main .about button:active {
-  transform: scale(0.95);
-  background-color: #4C37C8;
 }
 .content .main .about footer {
   margin-top: 3em;
